@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Informasi Covid-19</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Website Informasi Kesehatan Covid-19</h1>
+        <p>Kenali, Cegah, dan Lindungi Diri Anda</p>
+    </header>
+
+    <!-- Navigasi -->
+    <nav>
+        <a href="#tentang">Tentang</a>
+        <a href="#gejala">Gejala</a>
+        <a href="#pencegahan">Pencegahan</a>
+        <a href="#cek">Cek Gejala</a>
+    </nav>
+
+    <!-- Tentang Covid -->
+    <section id="tentang">
+        <h2>Apa itu Covid-19?</h2>
+        <p>
+            Covid-19 adalah penyakit menular yang disebabkan oleh virus corona.
+            Penyakit ini menyerang sistem pernapasan dan dapat menular melalui droplet.
+        </p>
+    </section>
+
+    <!-- Gejala -->
+    <section id="gejala">
+        <h2>Gejala Umum</h2>
+        <ul>
+            <li>Demam</li>
+            <li>Batuk kering</li>
+            <li>Sesak napas</li>
+            <li>Kehilangan indera penciuman</li>
+        </ul>
+    </section>
+
+    <!-- Pencegahan -->
+    <section id="pencegahan">
+        <h2>Cara Pencegahan</h2>
+        <ol>
+            <li>Memakai masker</li>
+            <li>Mencuci tangan</li>
+            <li>Menjaga jarak</li>
+            <li>Menghindari kerumunan</li>
+        </ol>
+    </section>
+
+    <!-- Interaksi -->
+  <section id="cek">
+    <h2>Cek Gejala Covid-19</h2>
+    <p>Silakan pilih gejala yang Anda rasakan:</p>
+
+    <label>
+        <input type="checkbox" class="gejala" value="demam"> Demam
+    </label><br>
+
+    <label>
+        <input type="checkbox" class="gejala" value="batuk"> Batuk kering
+    </label><br>
+
+    <label>
+        <input type="checkbox" class="gejala" value="sesak"> Sesak napas
+    </label><br>
+
+    <label>
+        <input type="checkbox" class="gejala" value="hilang_penciuman">
+        Kehilangan penciuman
+    </label><br><br>
+
+    <button onclick="analisisGejala()">Analisis Gejala</button>
+
+    <p id="hasil"></p>
+</section>
+
+
+    <footer>
+        <p>© 2026 Website Kesehatan Covid-19</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
